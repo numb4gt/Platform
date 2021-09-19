@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerContr : MonoBehaviour
 {
-    public float speed = 20f;
+    public float speed = 60f;
     public Rigidbody2D rb;
     private bool faceRight = true;
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class PlayerContr : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(Vector2.up * 8500);
+            rb.AddForce(Vector2.up * 10000);
         }
 
         if (move > 0 && !faceRight)
